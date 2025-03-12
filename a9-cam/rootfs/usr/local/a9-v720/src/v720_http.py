@@ -403,7 +403,7 @@ class v720_http(log, BaseHTTPRequestHandler):
                 "data": {
                     "tcpPort": TCP_PORT,
                     "uid": uid,
-                    "isBind": "8",
+                    "isBind": "1",
                     "domain": "v720.naxclow.com",
                     "updateUrl": None,
                     "host": netcl_udp.get_ip(list(gws['default'].values())[0][0], 80),
