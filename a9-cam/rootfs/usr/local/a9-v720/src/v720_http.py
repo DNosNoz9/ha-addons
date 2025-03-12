@@ -388,7 +388,7 @@ class v720_http(log, BaseHTTPRequestHandler):
         elif self.path.startswith('/app/api/ApiSysDevices/a9bindingAppDevice'):
             ret = {"code": 200, "message": "OK", "data": None}
         elif self.path.startswith('/app/api/ApiSysDevices/getDevInfo'):
-            ret = {"code": 200, "message": "OK", "data": {"userInfo_userId":"a85320ad94fc794006ee9017c3adade9","ota_url":null,"ota_version":null,"userInfo_state":1,"cloudStorage":0}}
+            ret = {"code": 200, "message": "OK", "data": {"userInfo_userId":"a85320ad94fc794006ee9017c3adade9","ota_url":None,"ota_version":None,"userInfo_state":1,"cloudStorage":0}}
         elif self.path.startswith('/app/api/ApiServer/getA9ConfCheck'):
             uid = f'{random.randint(0,99999):05d}'
             p = self.path[len('/app/api/ApiServer/getA9ConfCheck?'):]
